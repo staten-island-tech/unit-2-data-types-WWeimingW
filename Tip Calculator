@@ -1,6 +1,5 @@
-
+#x is bill y is tip z is total
 x = float(3)
 y= int(2)
 z= (x+y)
 print(f"your total is {z}")
-
