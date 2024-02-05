@@ -1,0 +1,6 @@
+
+x = float(3)
+y= int(2)
+z= (x+y)
+print(f"your total is {z}")
+
