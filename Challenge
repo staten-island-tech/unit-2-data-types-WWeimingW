@@ -7,8 +7,47 @@ y=(len(words_list)) """
 
 #Let's create a function that determines if a number is odd or even
 
-num = int(input("number"))
+""" num = int(input("number"))
 if (num % 2) == 0:
     print("The number is even")
 else:
-    print("The number is odd")
+    print("The number is odd") """
+
+#Let's create a function to accept a "bill" value and offer a tip of 0%, 15%, 20% or 25% depending on if the service was "bad, okay, good , or great ". 
+
+""" bill = (input("Payment for the food:"))
+bills = float(bill)
+service = input("How was your service:")
+if service == ("Great"):
+    print(f"Your total is: {bills * 1.25}")
+elif service == ("Good"):
+    print(f"Your total is: {bills * 1.20}")
+elif service == ("Okay"):
+    print(f"Your total is: {bills *1.15}")
+elif service == ("Bad"):
+    print(f"Your total is: {bills * 1}") """
+
+#Create a function that accepts an input and determines all factors of the number. 
+    
+""" def print_factors(x):
+    print("The factors of",x,"are:")
+    for i in range(1, x + 1):
+        if x % i == 0:
+            print(i) 
+
+num=int(input("number: "))
+print_factors(num)"""
+
+#Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
+
+x = input("first number")
+y = input("second number")
+
+def gcf(x, y):
+    if(y == 0):
+        return x
+    else:
+        return gcf(y,x % y)
+    
+print(Your greatest common factor of:" ,x,y "is:")
+print(gcf(x, y))
