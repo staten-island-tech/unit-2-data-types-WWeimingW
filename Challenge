@@ -40,14 +40,17 @@ print_factors(num)"""
 
 #Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
 
-x = input("first number")
-y = input("second number")
+import math
 
-def gcf(x, y):
-    if(y == 0):
-        return x
-    else:
-        return gcf(y,x % y)
-    
-print(Your greatest common factor of:" ,x,y "is:")
-print(gcf(x, y))
+def print_factors(x):
+    print("The factors of",x,"are:")
+    for i in range(1, x + 1):
+        if x % i == 0:
+            print(i)
+
+num1 = int(input("What s your first number: "))
+print_factors(num1)
+num2 = int(input("What is your second number: "))
+print_factors(num2)
+gcf = (math.gcd(num1, num2))
+print("The greatest common factor of", num1, "and", num2, "are: ", gcf)
