@@ -48,7 +48,7 @@ def print_factors(x):
         if x % i == 0:
             print(i)
 
-num1 = int(input("What s your first number: "))
+num1 = int(input("What is your first number: "))
 print_factors(num1)
 num2 = int(input("What is your second number: "))
 print_factors(num2)
